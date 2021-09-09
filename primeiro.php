@@ -79,4 +79,32 @@ echo "<br> ".Incremento();
 
 <!-- Sexto PHP !--> 
 
+<?PHP 
 
+ echo "<br>";
+ $n = 500;
+
+ do{
+
+    echo "<br>".$n;
+
+    $n += 2;
+ }while($n <= 550);
+
+?>
+
+<!-- Setimo PHP !--> 
+
+<?PHP 
+
+
+for($x = 0; $x < 10; $x++){
+	echo "<br> ".$x;
+	if($x == 5)
+	{
+		echo "<br>";
+	}
+}
+
+
+?>
