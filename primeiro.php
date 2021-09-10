@@ -81,12 +81,12 @@ echo "<br> ".Incremento();
 
 <?PHP 
 
- echo "<br>";
+ echo "<br> <br>";
  $n = 500;
 
  do{
 
-    echo "<br>".$n;
+    echo "&nbsp;&nbsp;".$n;
 
     $n += 2;
  }while($n <= 550);
@@ -97,14 +97,82 @@ echo "<br> ".Incremento();
 
 <?PHP 
 
+ echo "<br> <br>";
 
-for($x = 0; $x < 10; $x++){
-	echo "<br> ".$x;
+for($x = 0; $x <= 10; $x++){
+	echo "&nbsp;&nbsp ".$x;
 	if($x == 5)
 	{
-		echo "<br>";
+		echo "&nbsp;&nbsp;";
 	}
 }
+
+?>
+
+<!-- Oitavo PHP !-->
+
+<?PHP 
+
+echo "<br> <br>";
+
+$nomes = array('João', 'José', 'Carlos', 'Magno');
+
+foreach ($nomes as $object) {
+     echo "&nbsp;&nbsp;".$object;
+}
+
+?> 
+
+<!-- Nono PHP !-->
+
+<?PHP 
+
+echo "<br> <br>";
+$x = 0;
+
+while($x < 100)
+{
+	echo "<br>".$x;
+	if($x == 10)
+		break;
+		$x++;
+}
+
+?>
+
+<!-- Decimo PHP !-->
+
+<?PHP 
+
+echo "<br> <br>";
+
+for($x = 0; $x <= 100; $x++)
+{
+	if($x == 10)
+		goto desvio; 
+
+	echo "<br>".$x;
+}
+
+desvio:
+echo "<br> Pronto, aqui está o desvio.";
+
+?>
+
+<!-- Decimo Primeiro PHP !-->
+
+<?PHP 
+
+for($x = 1; $x <= 100; $x++)
+{
+	if($x % 2 == 0)
+	{
+		continue;
+	}
+	echo "<br>".$x;
+	
+}
+
 
 
 ?>
